@@ -5,8 +5,8 @@ from src.customer import Customer
 
 class TestPub(unittest.TestCase):
     def setUp(self):
-        drinks = ["vodka", "beer", "wine"]
-        self.pub = Pub("White Horse", 200, drinks) 
+        self.drinks = ["vodka", "beer", "wine"]
+        self.pub = Pub("White Horse", 200, self.drinks) 
 
     def test_pub_has_name (self):
         self.assertEqual("White Horse", self.pub.name)
